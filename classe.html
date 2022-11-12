@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <script>
+            
+            class Animal{  //classe Animal
+                constructor(nome){  //construtor é um método que é executado automaticamente quando se cria um objeto
+                    this.nome = nome; //atributo nome
+                }
+
+                printNome(){  //
+                    return this.nome; //this.nome é o nome do objeto
+                }
+            }
+
+            class Cachorro extends Animal{ //classe Cachorro que herda de Animal
+                constructor(nome){  //construtor é um método que é executado automaticamente quando se cria um objeto
+                    super(nome); //super é um método que executa o construtor da classe pai
+                    
+                    this.raca = "vira-lata"; //adiciona um atributo a classe Cachorro
+                }
+
+                printRaca(){  //método que retorna a raça do cachorro
+                    return this.raca;  //this.raca é a raça do objeto
+                }
+            
+                
+            }
+
+            cachorro = new Cachorro("Rex");  //cria um objeto do tipo Cachorro
+
+            alert(cachorro.printRaca()); //imprime a raça do cachorro
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <script>
+
+            function Pessoa(){
+                this.name = 'João';
+                this.idade = 20;
+                this.printName = function(numero){
+                    alert(numero);
+                };
+
+                this.retunrAnimal = function(animal){
+                    return animal;
+                }
+            }
+            function Animal(){
+                this.name = 'Cachorro';
+            
+            }
+            
+
+            
+             
+
+            var pessoa = new Pessoa();
+
+            var animal = new Animal();
+
+            alert(Pessoa.retunrAnimal(animal).name);
+
+
+        </script>
+    </body>
+</html>

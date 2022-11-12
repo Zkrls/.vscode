@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script>
+
+            //calculadora dinamica
+
+            var numeroInicial = prompt('Digite o número inicial: ');
+
+            var sinal = prompt('Digite o sinal da operação: ');
+
+            while(sinal != '+' && sinal != '-' && sinal != '*' && sinal != '/'){
+                alert('Operação invalida!');
+                 sinal = prompt('Digite o sinal da operação : ');
+            }
+
+            var numeroFinal = prompt('Digite o número final: ');
+
+            var numeroInicial = parseInt(numeroInicial);
+            var numeroFinal = parseInt(numeroFinal);
+
+            resultadoFinal = 0;
+
+            if(sinal == '+'){
+                resultadoFinal = numeroInicial + numeroFinal;
+            }else if(sinal == '-'){
+                resultadoFinal = numeroInicial - numeroFinal;
+            }else if(sinal == '*'){
+                resultadoFinal = numeroInicial * numeroFinal;
+            }else if(sinal == '/'){
+                resultadoFinal = numeroInicial / numeroFinal;   
+            }
+
+            alert('O resultado da operação é: ' + resultadoFinal);
+            
+            
+
+        </script>
+
+    </body>
+</html>
